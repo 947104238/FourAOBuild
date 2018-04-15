@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--选择运算符-->
+    <string-array name="arr_symbol">
+        <item>+ (加法)</item>
+        <item>- (减法)</item>
+        <item>* (乘法)</item>
+        <item>/ (除法)</item>
+    </string-array>
+    <string-array name="value_symbol">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!--选择打印设备-->
+    <string-array name="arr_printer">
+        <item>蓝牙打印机</item>
+        <item>USB打印机</item>
+        <item>局域WLAN打印机</item>
+        <item>微软3D打印机</item>
+        <item>T-800自走打印机</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="value_printer">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="arr_max">
+        <item>十以内</item>
+        <item>一百以内</item>
+        <item>一千以内</item>
+    </string-array>
+    <string-array name="value_max">
+        <item>11</item>
+        <item>101</item>
+        <item>1001</item>
+    </string-array>
+</resources>

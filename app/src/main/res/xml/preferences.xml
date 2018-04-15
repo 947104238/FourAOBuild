@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/app_name">
+    <PreferenceCategory
+        android:title="@string/settings" >
+        <EditTextPreference
+            android:title="@string/text_nums"
+            android:summary="@string/text_numssummary"
+            android:key="set_testnums"
+            android:defaultValue="20" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/set_calcu">
+        <MultiSelectListPreference
+            android:key="set_symbol"
+            android:title="@string/set_symbol"
+            android:summary="@string/set_symbol_summary"
+            android:entries="@array/arr_symbol"
+            android:entryValues="@array/value_symbol"/>
+        <ListPreference
+            android:key="set_maxnum"
+            android:entries="@array/arr_max"
+            android:entryValues="@array/value_max"
+            android:title="设置最大数"
+            android:summary="设置运算题的数值范围"/>
+        <SwitchPreference
+            android:key="set_parentheses"
+            android:title="是否有括号"
+            android:summaryOn="包含括号"
+            android:summaryOff="不包含括号"
+            android:persistent="true"
+            android:defaultValue="false"/>
+        <SwitchPreference
+            android:key="set_smallnum"
+            android:title="是否有小数"
+            android:summary="无小数"
+            android:summaryOn="包含小数"
+            android:summaryOff="不包含小数"
+            android:persistent="true"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="功能设置">
+        <SwitchPreference
+            android:key="set_printlocal"
+            android:title="输出到本地文件"
+            android:summaryOff="不保存到本地"
+            android:summaryOn="保存到本地"
+            android:defaultValue="false"/>
+        <ListPreference
+            android:key="set_printer"
+            android:title="连接到打印机"
+            android:summary="选择打印机类型"
+            android:entries="@array/arr_printer"
+            android:entryValues="@array/value_printer"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="执行功能">
+        <Preference
+            android:key="build"
+            android:title="生成练习题"/>
+        <Preference
+            android:key="saveToLocal"
+            android:title="保存到本地"/>
+        <Preference
+            android:key="printer"
+            android:title="打印"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

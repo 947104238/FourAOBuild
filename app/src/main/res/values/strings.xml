@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">四则运算生成器</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="settings">设置选项</string>
+    <string name="text_nums">设置题目数量</string>
+    <string name="text_numssummary">设置您需要的题目数量</string>
+    <string name="set_calcu">运算设置</string>
+    <string name="set_symbol">选择运算符</string>
+    <string name="set_symbol_summary">选择加减乘除中的一种或多种</string>
+
+    <!-- Strings related to Settings -->
+
+</resources>
